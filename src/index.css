@@ -1,0 +1,42 @@
+/* 1. Importiamo i Font */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@300;400;500;700&display=swap');
+
+/* 2. Direttive Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3. Stili Globali Custom */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #EFEBE0; /* Colore di sfondo crema */
+  color: #222A3A; /* Colore testo scuro */
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: 'Lora', serif;
+}
+
+/* Animazioni */
+.fade-in { animation: fadeIn 0.5s ease-in; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* Effetto biglietto aereo */
+.ticket-edge {
+  background-image: radial-gradient(circle at 0 50%, transparent 8px, white 9px);
+  background-position: 0 50%;
+  background-size: 100% 100%;
+}
+
+/* Stile scrollbar opzionale per renderlo più pulito */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EFEBE0;
+}
+::-webkit-scrollbar-thumb {
+  background: #C6A875;
+  border-radius: 4px;
+}
